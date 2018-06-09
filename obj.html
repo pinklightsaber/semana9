@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objeto</title>
+	<style>
+		#box {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+	<script>
+		//definiendo element bajo window
+
+			//var element = document.getElementById('box')
+			//element.style.backgroundColor = 'black'; 
+
+		var myBox = {
+			element: document.getElementById('box'), //definiendo element dentro de la caja
+			paintRed: function(){ //una funcion anonima
+				element.style.backgroundColor = 'red';
+			},
+			paintBlue: function(){ //una funcion anonima
+				element.style.backgroundColor = 'blue';
+			}
+		}
+
+		myBox.paintRed(); //lamando al método
+
+	</script>
+	
+</body>
+</html>
