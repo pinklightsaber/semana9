@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Primeros objetos</title>
+</head>
+<body>
+	<script>
+		a  = {
+			color:100, 
+			valor: 200,
+			mostrar: function(){
+				console.log('hola')}
+		};
+		a.mostrar(); //llamando al método
+		console.log(a.color) //llamando a una propiedad
+		a.color = 'green';
+		console.log(a.color) //cambiando el valor a una propiedad a verde
+		a['color'] = 'red'; 
+		console.log(a.color) //cambiando el valor de una propiedad a rojo
+
+		car = {
+			model: 'Camaro',
+			color: 'Black',
+			year: 2017,
+			arrancar: function (){ console.log('El auto está encendido')},
+			avanzar: function(){console.log('El auto está avanzando')},
+			detener: function(){console.log('El auto se detuvo')} //funciones dentro de los objetos se llaman métodos
+		};
+
+
+
+
+	</script>
+	
+</body>
+</html>
