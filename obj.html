@@ -22,10 +22,10 @@
 		var myBox = {
 			element: document.getElementById('box'), //definiendo element dentro de la caja
 			paintRed: function(){ //una funcion anonima
-				element.style.backgroundColor = 'red';
+				this.element.style.backgroundColor = 'red';
 			},
 			paintBlue: function(){ //una funcion anonima
-				element.style.backgroundColor = 'blue';
+				this.element.style.backgroundColor = 'blue';
 			}
 		}
 
