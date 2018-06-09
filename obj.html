@@ -21,15 +21,20 @@
 
 		var myBox = {
 			element: document.getElementById('box'), //definiendo element dentro de la caja
-			paintRed: function(){ //una funcion anonima
-				this.element.style.backgroundColor = 'red';
+			paintRed: function(){ 
+				this.paint('red') //llamando a otro método 
 			},
 			paintBlue: function(){ //una funcion anonima
 				this.element.style.backgroundColor = 'blue';
-			}
+			},
+			paint: function(color){ //funcion para llamar cualquier color
+				this.element.style.backgroundColor = color 
+			} 
 		}
 
 		myBox.paintRed(); //lamando al método
+
+		//myBox.paint ('cualquier_color')
 
 	</script>
 	
